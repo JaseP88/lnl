@@ -8,6 +8,6 @@ export class RestApiService {
   constructor(private http: HttpClient) { }
 
   getGreeting(): Observable<Greeting> {
-    return this.http.get<Greeting>('localhost:8080/greeting');
+    return this.http.get<Greeting>('http://localhost:8080/greeting');
   }
 }

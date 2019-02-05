@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from '../app-routing.module';
 import { AppComponent } from './app.component';
-import { RestApiService } from '../services/rest-api.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { RestApiService } from 'src/services/rest-api.service';
 
 @NgModule({
   declarations: [
