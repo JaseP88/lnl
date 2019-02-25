@@ -4,7 +4,7 @@
 1. To build a dockerfile in path into an image
 `docker build --tag=myappname .`
 2. To run an image
-`docker run myappname`
+`docker run -p 4200:4200 myappname`
 
 
 ## Local Jenkins
