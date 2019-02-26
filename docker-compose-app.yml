@@ -1,0 +1,13 @@
+version: '3'
+  services:
+    webapp:
+      build: ./spectate
+      ports:
+        - "4200:4200"
+      depends_on:
+        - backend
+
+    backend:
+      build: ./the-boxing-app
+      ports:
+        - "8080:8080"
